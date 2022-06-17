@@ -14,21 +14,21 @@
 
     h1 {
         text-transform: uppercase;
-        color: #336B6B;
+        color: CornflowerBlue;
     }
 
     table {
         border: solid 1px #DDEEEE;
         border-collapse: collapse;
         border-spacing: 0;
-        width: 80%;
+        width: 70%;
         margin: 10px auto 10px auto;
     }
 
     table thead th {
-        background-color: #DDEFEF;
+        background-color: blue;
         border: solid 1px #DDEEEE;
-        color: #336B6B;
+        color: #FFFFFF;
         padding: 10px;
         text-align: left;
         text-shadow: 1px 1px 1px #fff;
@@ -43,8 +43,8 @@
     }
 
     a {
-        background-color: #333;
-        color: #fff;
+        background-color: CornflowerBlue;
+        color: blanchedalmond;
         padding: 10px;
         text-decoration: none;
         font-size: 12px;
@@ -91,7 +91,7 @@
                             <tr>
                                 <td><?php echo $no; ?></td>
                                 <td><?php echo $row['nama_produk']; ?></td>
-                                <td><?php echo substr($row['deskripsi'], 0, 70,); ?></td>
+                                <td><?php echo substr($row['deskripsi'], 0, 30,); ?></td>
                                 <td>Rp <?php echo number_format($row['harga_beli'],0,',','.'); ?></td>
 
                                 <td><img style="width: 120px;" src="gambar/<?php echo $row['gambar_produk']; ?>"></td>
